@@ -84,7 +84,7 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(8,8,8,.92) 0%,rgba(8,8,8,.7) 60%,rgba(8,8,8,.5) 100%)}
 .hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(196,30,30,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(196,30,30,.04) 1px,transparent 1px);background-size:60px 60px;opacity:.6}
 .hero-content{position:relative;z-index:2;max-width:700px}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(196,30,30,.12);border:1px solid var(--border-red);padding:6px 16px;border-radius:2px;margin-bottom:28px}
+.hero-badge{display:none;align-items:center;gap:8px;background:rgba(196,30,30,.12);border:1px solid var(--border-red);padding:6px 16px;border-radius:2px;margin-bottom:28px}
 .hero-badge span{font-size:.7rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--red)}
 .hero-title{font-size:clamp(2.4rem,5.5vw,4.2rem);font-weight:900;line-height:1.05;letter-spacing:-.04em;margin-bottom:20px}
 .hero-title em{font-style:normal;color:var(--red)}
@@ -94,7 +94,7 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .btn-primary:hover{background:var(--red-dark);transform:translateY(-2px);box-shadow:0 12px 32px rgba(196,30,30,.35)}
 .btn-secondary{display:inline-flex;align-items:center;gap:10px;background:transparent;color:var(--white);font-size:.8rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:15px 30px;border-radius:2px;border:1px solid rgba(255,255,255,.2);transition:all .3s}
 .btn-secondary:hover{border-color:rgba(255,255,255,.5);background:rgba(255,255,255,.05)}
-.hero-scroll{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;opacity:.5}
+.hero-scroll{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);display:none;flex-direction:column;align-items:center;gap:8px;opacity:.5}
 .hero-scroll-line{width:1px;height:48px;background:linear-gradient(to bottom,transparent,var(--white));animation:scrollPulse 2s ease-in-out infinite}
 .hero-scroll span{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase}
 @keyframes scrollPulse{0%,100%{opacity:.3}50%{opacity:1}}
@@ -282,6 +282,8 @@ footer{background:var(--black);border-top:1px solid var(--border);padding:40px 0
   .form-row{grid-template-columns:1fr}
   .hero-title{font-size:2.2rem}
   #hero{padding-top:0}
+  .hero-badge{display:inline-flex}
+  .hero-scroll{display:flex}
   .testimonial-card{flex:0 0 calc(100% - 24px)}
   .footer-grid{grid-template-columns:1fr}
   .footer-bottom{flex-direction:column;text-align:center}
