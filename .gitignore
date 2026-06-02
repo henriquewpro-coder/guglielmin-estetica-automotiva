@@ -1,0 +1,22 @@
+# Netlify
+.netlify
+
+# Projeto separado clonado localmente
+MazyOS/
+
+# Configurações do Claude Code
+.claude/
+
+# Pasta de upload manual (gerada automaticamente)
+deploy/
+
+# Imagens temporárias / geradas por IA
+ChatGPT Image*
+
+# Logo com fundo (substituído pelo sem fundo)
+principal.png
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.log
