@@ -108,12 +108,14 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .service-card:hover::before{transform:scaleX(1)}
 .service-card:hover{background:var(--dark-2);transform:translateY(-4px)}
 .service-card.featured{background:var(--dark-2);border-top:2px solid var(--red)}
-.service-card.card-bg-img{background-color:var(--dark-1);background-image:linear-gradient(rgba(8,8,8,.72),rgba(8,8,8,.72)),url('markus-spiske-8K547Tg-F1o-unsplash.webp');background-size:cover;background-position:center}
-.service-card.card-bg-img:hover{background-image:linear-gradient(rgba(8,8,8,.55),rgba(8,8,8,.55)),url('markus-spiske-8K547Tg-F1o-unsplash.webp');background-color:var(--dark-1)}
-.service-card.card-bg-interior{background-color:var(--dark-1);background-image:linear-gradient(rgba(8,8,8,.72),rgba(8,8,8,.72)),url('muhammad-saad-_vmBjTG5L1g-unsplash.webp');background-size:cover;background-position:center}
-.service-card.card-bg-interior:hover{background-image:linear-gradient(rgba(8,8,8,.55),rgba(8,8,8,.55)),url('muhammad-saad-_vmBjTG5L1g-unsplash.webp');background-color:var(--dark-1)}
-.service-card.card-bg-lavagem{background-color:var(--dark-1);background-image:linear-gradient(rgba(8,8,8,.72),rgba(8,8,8,.72)),url('taras-chernus-mFWtlQb1GeU-unsplash.webp');background-size:cover;background-position:center}
-.service-card.card-bg-lavagem:hover{background-image:linear-gradient(rgba(8,8,8,.55),rgba(8,8,8,.55)),url('taras-chernus-mFWtlQb1GeU-unsplash.webp');background-color:var(--dark-1)}
+.service-card.card-bg-lavagem{background-color:var(--dark-1);background-image:linear-gradient(rgba(8,8,8,.72),rgba(8,8,8,.72)),url('lavagem.webp');background-size:cover;background-position:center}
+.service-card.card-bg-lavagem:hover{background-image:linear-gradient(rgba(8,8,8,.55),rgba(8,8,8,.55)),url('lavagem.webp');background-color:var(--dark-1)}
+.service-card.card-bg-polimento{background-color:var(--dark-1);background-image:linear-gradient(rgba(8,8,8,.72),rgba(8,8,8,.72)),url('polimento.webp');background-size:cover;background-position:center}
+.service-card.card-bg-polimento:hover{background-image:linear-gradient(rgba(8,8,8,.55),rgba(8,8,8,.55)),url('polimento.webp');background-color:var(--dark-1)}
+.service-card.card-bg-interior{background-color:var(--dark-1);background-image:linear-gradient(rgba(8,8,8,.72),rgba(8,8,8,.72)),url('interior.webp');background-size:cover;background-position:center}
+.service-card.card-bg-interior:hover{background-image:linear-gradient(rgba(8,8,8,.55),rgba(8,8,8,.55)),url('interior.webp');background-color:var(--dark-1)}
+.service-card.card-bg-motor{background-color:var(--dark-1);background-image:linear-gradient(rgba(8,8,8,.72),rgba(8,8,8,.72)),url('motor.webp');background-size:cover;background-position:center}
+.service-card.card-bg-motor:hover{background-image:linear-gradient(rgba(8,8,8,.55),rgba(8,8,8,.55)),url('motor.webp');background-color:var(--dark-1)}
 .service-icon{width:48px;height:48px;margin-bottom:24px;flex-shrink:0;display:block;color:var(--red)}
 .service-card h3{font-size:1.1rem;font-weight:700;letter-spacing:-.02em;margin-bottom:12px}
 .service-card p{font-size:.85rem;color:var(--gray-light);line-height:1.7}
@@ -384,10 +386,10 @@ footer{background:var(--black);border-top:1px solid var(--border);padding:40px 0
           <p style="color:rgba(255,255,255,.8)">Higienização profunda de interior e exterior. Produtos premium, resultado impecável.</p>
           <span class="service-tag">Serviço Principal</span>
         </div>
-        <div class="service-card aos" style="transition-delay:.2s">
+        <div class="service-card card-bg-polimento aos" style="transition-delay:.2s">
           <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>
           <h3>Polimento de Veículos</h3>
-          <p>Recuperação de brilho e remoção de oxidação. Sua pintura como nova.</p>
+          <p style="color:rgba(255,255,255,.8)">Recuperação de brilho e remoção de oxidação. Sua pintura como nova.</p>
         </div>
         <div class="service-card card-bg-interior aos" style="transition-delay:.3s">
           <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
@@ -402,7 +404,7 @@ footer{background:var(--black);border-top:1px solid var(--border);padding:40px 0
           <h3>Detalhamento Interior</h3>
           <p style="color:rgba(255,255,255,.8)">Limpeza técnica completa do interior. Banco, tapetes, painel e muito mais.</p>
         </div>
-        <div class="service-card card-bg-img aos" style="transition-delay:.4s">
+        <div class="service-card card-bg-motor aos" style="transition-delay:.4s">
           <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="8" width="20" height="10" rx="2"/><path d="M6 8V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"/><path d="M6 12h.01M10 12h.01M14 12h.01M18 12h.01"/><path d="M4 18v2M8 18v2M16 18v2M20 18v2"/><path d="M9 8v3M15 8v3"/></svg>
           <h3>Lavagem de Motor</h3>
           <p style="color:rgba(255,255,255,.8)">Limpeza profissional do compartimento do motor. Removemos graxa, óleo e sujeira acumulada com produtos específicos que não danificam componentes elétricos — seu motor limpo, protegido e com aparência de novo.</p>
