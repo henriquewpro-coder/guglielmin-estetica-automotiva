@@ -173,7 +173,8 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 /* ── GALLERY ── */
 #galeria{padding:64px 0;background:var(--dark-1)}
 .gallery-header{text-align:center;margin-bottom:36px}
-.gallery-sliders{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.gallery-sliders{display:flex;justify-content:center}
+.ba-wrapper{width:100%;max-width:720px}
 .ba-wrapper{display:flex;flex-direction:column;gap:12px}
 .ba-label-row{display:flex;justify-content:space-between;font-size:.65rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase}
 .ba-label-before{color:var(--gray)}
@@ -254,7 +255,7 @@ footer{background:var(--black);border-top:1px solid var(--border);padding:40px 0
   .stats-grid{grid-template-columns:repeat(2,1fr)}
   .pricing-grid{grid-template-columns:1fr;gap:0}
   .pricing-card.featured{order:-1}
-  .gallery-sliders{grid-template-columns:1fr}
+
   .booking-grid{grid-template-columns:1fr;gap:40px}
   .location-grid{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr 1fr;gap:32px}
@@ -589,29 +590,11 @@ footer{background:var(--black);border-top:1px solid var(--border);padding:40px 0
         <div class="ba-wrapper aos" style="transition-delay:.1s">
           <div class="ba-label-row"><span class="ba-label-before">Antes</span><span class="ba-label-after">Depois</span></div>
           <div class="ba-slider" data-index="0">
-            <div class="ba-before" style="background-image:url('antes-1.jpg')"></div>
-            <div class="ba-after" style="background-image:url('depois-3.jpg')"></div>
+            <div class="ba-before" style="background-image:url('fusca_antes.webp')"></div>
+            <div class="ba-after" style="background-image:url('fusca_depois.webp')"></div>
             <div class="ba-handle"><div class="ba-arrows">◀ ▶</div></div>
           </div>
-          <p style="text-align:center;font-size:.72rem;color:var(--gray);margin-top:8px;letter-spacing:.05em">Polimento completo</p>
-        </div>
-        <div class="ba-wrapper aos" style="transition-delay:.2s">
-          <div class="ba-label-row"><span class="ba-label-before">Antes</span><span class="ba-label-after">Depois</span></div>
-          <div class="ba-slider" data-index="1">
-            <div class="ba-before" style="background-image:url('antes-3.jpg')"></div>
-            <div class="ba-after" style="background-image:url('depois-2.jpg')"></div>
-            <div class="ba-handle"><div class="ba-arrows">◀ ▶</div></div>
-          </div>
-          <p style="text-align:center;font-size:.72rem;color:var(--gray);margin-top:8px;letter-spacing:.05em">Lavagem completa</p>
-        </div>
-        <div class="ba-wrapper aos" style="transition-delay:.3s">
-          <div class="ba-label-row"><span class="ba-label-before">Antes</span><span class="ba-label-after">Depois</span></div>
-          <div class="ba-slider" data-index="2">
-            <div class="ba-before" style="background-image:url('antes-2.jpg')"></div>
-            <div class="ba-after" style="background-image:url('depois-1.jpg')"></div>
-            <div class="ba-handle"><div class="ba-arrows">◀ ▶</div></div>
-          </div>
-          <p style="text-align:center;font-size:.72rem;color:var(--gray);margin-top:8px;letter-spacing:.05em">Detalhamento interior</p>
+          <p style="text-align:center;font-size:.72rem;color:var(--gray);margin-top:8px;letter-spacing:.05em">Polimento completo — Fusca</p>
         </div>
       </div>
     </div>
