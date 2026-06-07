@@ -108,13 +108,14 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .service-card img{width:100%;height:auto;display:block}
 .services-extra{border:1px solid var(--red);border-radius:4px;background:var(--dark-1);padding:32px 36px}
 .services-extra-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
-.se-item{display:flex;align-items:center;gap:12px;padding:12px 16px;font-size:.85rem;font-weight:500;color:var(--silver-light);letter-spacing:.02em;border-bottom:1px solid var(--border);border-right:1px solid var(--border)}
+.se-item{display:flex;align-items:flex-start;gap:12px;padding:14px 16px;border-bottom:1px solid var(--border);border-right:1px solid var(--border)}
 .se-item:nth-child(3n){border-right:none}
-.se-item:nth-last-child(-n+3):not(:nth-child(3n+1) ~ .se-item){border-bottom:none}
 .se-item:nth-last-child(1),.se-item:nth-last-child(2),.se-item:nth-last-child(3){border-bottom:none}
-.se-dot{width:6px;height:6px;background:var(--red);border-radius:50%;flex-shrink:0}
+.se-dot{width:6px;height:6px;background:var(--red);border-radius:50%;flex-shrink:0;margin-top:5px}
 .se-highlight .se-dot{box-shadow:0 0 6px var(--red)}
-.se-badge{margin-left:8px;font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--red);border:1px solid var(--border-red);padding:2px 8px;border-radius:2px;white-space:nowrap}
+.se-content{display:flex;flex-direction:column;gap:5px}
+.se-name{font-size:.85rem;font-weight:500;color:var(--silver-light);letter-spacing:.02em;white-space:nowrap}
+.se-badge{align-self:flex-start;font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--red);border:1px solid var(--border-red);padding:2px 8px;border-radius:2px}
 @media(max-width:768px){.services-extra-grid{grid-template-columns:1fr}.se-item{border-right:none}.se-item:nth-last-child(1){border-bottom:none}}
 
 /* ── PORTFOLIO ── */
@@ -392,17 +393,17 @@ footer{background:var(--black);border-top:1px solid var(--border);padding:40px 0
       </div>
       <div class="services-extra aos" style="margin-top:16px">
         <div class="services-extra-grid">
-          <div class="se-item"><span class="se-dot"></span>Lavagem interna e externa</div>
-          <div class="se-item"><span class="se-dot"></span>Lavagem expressa</div>
-          <div class="se-item"><span class="se-dot"></span>Lavagem de chassis</div>
-          <div class="se-item"><span class="se-dot"></span>Lavagem de motor</div>
-          <div class="se-item se-highlight"><span class="se-dot"></span>Lavagem com água quente <span class="se-badge">Diferenciado</span></div>
-          <div class="se-item"><span class="se-dot"></span>Higienização interna</div>
-          <div class="se-item"><span class="se-dot"></span>Polimento</div>
-          <div class="se-item"><span class="se-dot"></span>Espelhamento</div>
-          <div class="se-item"><span class="se-dot"></span>Encerramento</div>
-          <div class="se-item"><span class="se-dot"></span>Remoção de chuva ácida dos vidros</div>
-          <div class="se-item se-highlight"><span class="se-dot"></span>Tele-busca <span class="se-badge">Buscamos e entregamos</span></div>
+          <div class="se-item"><span class="se-dot"></span><div class="se-content"><span class="se-name">Lavagem interna e externa</span></div></div>
+          <div class="se-item"><span class="se-dot"></span><div class="se-content"><span class="se-name">Lavagem expressa</span></div></div>
+          <div class="se-item"><span class="se-dot"></span><div class="se-content"><span class="se-name">Lavagem de chassis</span></div></div>
+          <div class="se-item"><span class="se-dot"></span><div class="se-content"><span class="se-name">Lavagem de motor</span></div></div>
+          <div class="se-item se-highlight"><span class="se-dot"></span><div class="se-content"><span class="se-name">Lavagem com água quente</span><span class="se-badge">Poucos têm em BG</span></div></div>
+          <div class="se-item"><span class="se-dot"></span><div class="se-content"><span class="se-name">Higienização interna</span></div></div>
+          <div class="se-item"><span class="se-dot"></span><div class="se-content"><span class="se-name">Polimento</span></div></div>
+          <div class="se-item"><span class="se-dot"></span><div class="se-content"><span class="se-name">Espelhamento</span></div></div>
+          <div class="se-item"><span class="se-dot"></span><div class="se-content"><span class="se-name">Encerramento</span></div></div>
+          <div class="se-item"><span class="se-dot"></span><div class="se-content"><span class="se-name">Remoção de chuva ácida dos vidros</span></div></div>
+          <div class="se-item se-highlight"><span class="se-dot"></span><div class="se-content"><span class="se-name">Tele-busca</span><span class="se-badge">Buscamos e entregamos</span></div></div>
         </div>
       </div>
     </div>
