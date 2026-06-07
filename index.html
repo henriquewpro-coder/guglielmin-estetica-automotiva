@@ -179,8 +179,8 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .ba-label-row{display:flex;justify-content:space-between;font-size:.65rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase}
 .ba-label-before{color:var(--gray)}
 .ba-label-after{color:var(--red)}
-.ba-slider{position:relative;aspect-ratio:4/3;overflow:hidden;border-radius:4px;cursor:ew-resize;user-select:none}
-.ba-before,.ba-after{position:absolute;inset:0;background-size:cover;background-position:center}
+.ba-slider{position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:4px;cursor:ew-resize;user-select:none;background:var(--dark-2)}
+.ba-before,.ba-after{position:absolute;inset:0;background-size:contain;background-position:center;background-repeat:no-repeat}
 .ba-after{clip-path:inset(0 50% 0 0);transition:clip-path .05s}
 .ba-handle{position:absolute;top:0;bottom:0;left:50%;transform:translateX(-50%);width:2px;background:var(--red);cursor:ew-resize;z-index:10}
 .ba-handle::before,.ba-handle::after{content:'';position:absolute;left:50%;transform:translateX(-50%);width:36px;height:36px;background:var(--red);border-radius:50%;border:2px solid #fff;display:flex;align-items:center;justify-content:center}
